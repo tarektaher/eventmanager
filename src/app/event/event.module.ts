@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormioResource, FormioResourceRoutes, FormioResourceConfig, FormioResourceService } from 'angular-formio/resource';
 
 import { ParticipantModule } from './participant/participant.module';
+import { EventResourceComponent } from './event-resource/event-resource.component';
 
 const eventResourceRoutes: Routes = FormioResourceRoutes({});
 
@@ -19,7 +20,7 @@ eventResourceRoutes[2].children.push({
     FormioResource,
     RouterModule.forChild(eventResourceRoutes)
   ],
-  declarations: [],
+  declarations: [EventResourceComponent],
   providers: [
     FormioResourceService,
     {provide: FormioResourceConfig, useValue: {
