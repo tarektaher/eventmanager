@@ -46,10 +46,10 @@ import { HeaderComponent } from './header/header.component';
     ])
   ],
   providers: [
+    FormioResources,
     FormioAuthService,
     {provide: FormioAuthConfig, useValue: AuthConfig},
     {provide: FormioAppConfig, useValue: AppConfig},
-    FormioResources,
   ],
   bootstrap: [AppComponent]
 })
