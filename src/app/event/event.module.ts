@@ -8,6 +8,7 @@ import { ParticipantModule } from './participant/participant.module';
 import { EventResourceComponent } from './event-resource/event-resource.component';
 import { EventViewComponent } from './event-view/event-view.component';
 
+
 const eventResourceRoutes: Routes = FormioResourceRoutes({
   resource : EventResourceComponent
 });
