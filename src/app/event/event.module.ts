@@ -9,8 +9,10 @@ import { EventResourceComponent } from './event-resource/event-resource.componen
 import { EventViewComponent } from './event-view/event-view.component';
 
 
+
 const eventResourceRoutes: Routes = FormioResourceRoutes({
-  resource : EventResourceComponent
+  view: EventViewComponent,
+  resource: EventResourceComponent
 });
 
 eventResourceRoutes[2].children.push({
