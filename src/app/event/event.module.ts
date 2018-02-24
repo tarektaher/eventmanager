@@ -7,7 +7,9 @@ import { FormioResource, FormioResourceRoutes, FormioResourceConfig, FormioResou
 import { ParticipantModule } from './participant/participant.module';
 import { EventResourceComponent } from './event-resource/event-resource.component';
 
-const eventResourceRoutes: Routes = FormioResourceRoutes({});
+const eventResourceRoutes: Routes = FormioResourceRoutes({
+  resource : EventResourceComponent
+});
 
 eventResourceRoutes[2].children.push({
   path: 'participant',

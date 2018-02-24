@@ -9,13 +9,11 @@ import { FormioResourceService, FormioResourceComponent } from 'angular-formio/r
   styleUrls: ['./event-resource.component.scss']
 })
 export class EventResourceComponent extends FormioResourceComponent implements OnInit {
-
   constructor(public service: FormioResourceService, public route: ActivatedRoute) {
     super(service, route);
   }
 
   ngOnInit() {
-
     super.ngOnInit();
   }
 
